@@ -1,24 +1,31 @@
-function add () {
-	
+function add (a, b) {
+	return a + b ;
 }
 
-function subtract () {
-	
+function subtract (a, b) {
+	return a - b;
 }
 
-function sum () {
-	
+function sum (arr) {
+	return arr.reduce((a, b) => a + b, 0);
 }
 
-function multiply () {
-	
+function multiply (arr) {
+	return arr.reduce((a, b) => a * b);
 }
 
-function power() {
-	
+function power(num, power) {
+	return Math.pow(num, power);
 }
 
-function factorial() {
+function factorial(num) {
+
+	if (num === 0 || num === 1) {
+		return 1;
+	}
+	else {
+		return factorial(num - 1) * num;
+	}
 	
 }
 

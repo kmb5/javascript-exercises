@@ -1,4 +1,10 @@
-const snakeCase = function() {
+const snakeCase = function(str) {
+
+    let lower = str.toLowerCase();
+    lower = lower.replace(/[]/g, '')
+
+
+    return lower.replace(/[ -\.\.]/g, '_')
 
 }
 
